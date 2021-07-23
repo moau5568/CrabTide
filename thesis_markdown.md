@@ -889,33 +889,33 @@ NMDS <- metaMDS(PERMFRAC1, distance = "bray", k = 2)
     ## Square root transformation
     ## Wisconsin double standardization
     ## Run 0 stress 0.1493862 
-    ## Run 1 stress 0.1646553 
-    ## Run 2 stress 0.1598284 
-    ## Run 3 stress 0.1595868 
-    ## Run 4 stress 0.1781502 
-    ## Run 5 stress 0.1736485 
-    ## Run 6 stress 0.1681255 
-    ## Run 7 stress 0.1598274 
-    ## Run 8 stress 0.1548686 
-    ## Run 9 stress 0.1940223 
-    ## Run 10 stress 0.1493871 
-    ## ... Procrustes: rmse 0.001057675  max resid 0.002799056 
-    ## ... Similar to previous best
-    ## Run 11 stress 0.1518357 
-    ## Run 12 stress 0.1642808 
-    ## Run 13 stress 0.1671516 
-    ## Run 14 stress 0.1595849 
-    ## Run 15 stress 0.1625997 
-    ## Run 16 stress 0.1493858 
+    ## Run 1 stress 0.1518349 
+    ## Run 2 stress 0.1493858 
     ## ... New best solution
-    ## ... Procrustes: rmse 0.0002612841  max resid 0.0007966576 
+    ## ... Procrustes: rmse 0.0003638682  max resid 0.001045172 
     ## ... Similar to previous best
-    ## Run 17 stress 0.157212 
-    ## Run 18 stress 0.1548685 
-    ## Run 19 stress 0.1493858 
-    ## ... Procrustes: rmse 0.0001086471  max resid 0.000268141 
+    ## Run 3 stress 0.1519034 
+    ## Run 4 stress 0.1518338 
+    ## Run 5 stress 0.1956885 
+    ## Run 6 stress 0.1598273 
+    ## Run 7 stress 0.1575052 
+    ## Run 8 stress 0.157508 
+    ## Run 9 stress 0.1927921 
+    ## Run 10 stress 0.1626057 
+    ## Run 11 stress 0.1640612 
+    ## Run 12 stress 0.1626017 
+    ## Run 13 stress 0.1625997 
+    ## Run 14 stress 0.1493859 
+    ## ... Procrustes: rmse 0.0002249883  max resid 0.0006427183 
     ## ... Similar to previous best
-    ## Run 20 stress 0.1598278 
+    ## Run 15 stress 0.1572152 
+    ## Run 16 stress 0.1493883 
+    ## ... Procrustes: rmse 0.000939717  max resid 0.002365789 
+    ## ... Similar to previous best
+    ## Run 17 stress 0.1957964 
+    ## Run 18 stress 0.1572125 
+    ## Run 19 stress 0.1518333 
+    ## Run 20 stress 0.1572117 
     ## *** Solution reached
 
 ``` r
@@ -996,7 +996,7 @@ PERMFIT
     ## Terms added sequentially (first to last)
     ## 
     ##           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
-    ## Tide       1    0.3162 0.31620  1.5585 0.06615  0.172
+    ## Tide       1    0.3162 0.31620  1.5585 0.06615  0.182
     ## Residuals 22    4.4635 0.20289         0.93385       
     ## Total     23    4.7797                 1.00000
 
@@ -1007,7 +1007,7 @@ pair.mod
 ```
 
     ##           pairs Df SumsOfSqs  F.Model         R2 p.value p.adjusted sig
-    ## 1 Meso vs Micro  1 0.3161973 1.558495 0.06615426   0.183      0.183
+    ## 1 Meso vs Micro  1 0.3161973 1.558495 0.06615426   0.173      0.173
 
 ``` r
 # SIMPER 
@@ -1019,16 +1019,14 @@ summary(sim)
     ## 
     ## Contrast: Meso_Micro 
     ## 
-    ##    average       sd  ratio     ava     avb cumsum     p  
-    ## G 0.277453 0.217213 1.2773 285.917 149.667 0.4508 0.096 .
-    ## F 0.095551 0.126366 0.7561  91.750  46.750 0.6060 0.801  
-    ## E 0.091212 0.095594 0.9542  88.583  84.417 0.7542 0.919  
-    ## D 0.087696 0.083951 1.0446 102.833  71.167 0.8967 0.156  
-    ## C 0.051100 0.045782 1.1161  25.333  64.750 0.9798 0.633  
-    ## B 0.009231 0.009392 0.9828   4.000  10.500 0.9948 0.127  
-    ## A 0.003224 0.003377 0.9547   1.417   3.083 1.0000 0.869  
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+    ##    average       sd  ratio     ava     avb cumsum     p
+    ## G 0.277453 0.217213 1.2773 285.917 149.667 0.4508 0.118
+    ## F 0.095551 0.126366 0.7561  91.750  46.750 0.6060 0.847
+    ## E 0.091212 0.095594 0.9542  88.583  84.417 0.7542 0.906
+    ## D 0.087696 0.083951 1.0446 102.833  71.167 0.8967 0.176
+    ## C 0.051100 0.045782 1.1161  25.333  64.750 0.9798 0.626
+    ## B 0.009231 0.009392 0.9828   4.000  10.500 0.9948 0.124
+    ## A 0.003224 0.003377 0.9547   1.417   3.083 1.0000 0.845
     ## Permutation: free
     ## Number of permutations: 999
 
