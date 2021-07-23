@@ -2,7 +2,9 @@
 title: "Interactive Effect of Crab Burrows and Tides on Mangrove Carbon Storage"
 author: "Moritz Klaassen"
 date: "May 27th 2021"
-output: github_document
+output: 
+html_document: 
+keep_md: true
 ---
 
 ```{r setup, include=FALSE}
